@@ -1,0 +1,97 @@
+*{
+  margin: 0%;
+  padding:0;
+}
+.back{
+  z-index:10;  
+  height:100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+.circle{
+  position: relative;
+  margin-top: 100px;
+  height:300px;
+  width:300px;
+
+
+  border-radius: 50%;
+ 
+}
+.fcircle{
+  
+  position: absolute;
+  background-color: rgb(138, 138, 155);
+  height:300px;
+  width:300px;
+  top:13.7%;
+  left:40.6%;
+  z-index:100;
+  border-radius: 50%;
+  background-image: url("logos/shield.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  z-index:10;
+}
+.knife{
+  position: absolute;
+  top:600px;
+  height:100px;
+  width:60px;
+}
+#knifeimg{
+  height:120px;
+}
+.com{
+  z-index: 0;
+  height:450px;
+  width:10px;
+}
+.mainLine{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height:420px;
+  width:20px;
+  z-index: 0;
+  left:50%;
+  left:140px;
+  top:-60px;
+
+}
+.fknife{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  height:100px;
+  width:20px; 
+}
+.outer{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: rgba(0,0,0,0.9);
+  height:100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:100;
+  visibility: hidden;
+}
+.inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:300px;
+  width:300px;
+  border:solid 2px white;
+  font-size: 35px;
+  color:white;
+  background-color: rgb(36, 36, 36);
+}
+
