@@ -2,11 +2,6 @@ let start = false;
 let ass = false;
 let endRound;
 const outer =  document.querySelector('.outer');
-// const setFcircle = () => {
-//   console.log("jiji");
-// }
-// window.addEventListener('resize',setFcircle)
-// const line;
 
 const hit = (knife) => {
   const allLines = document.querySelectorAll('.mainLine');
@@ -34,9 +29,6 @@ function isCollide(newLid, newkni) {
  
     // || itr.left < pok.right || itr.right < pok.left
     if((parseInt(itr.bottom) == 460) && (pok.top == 460)){
-      // for(i=1;i<endRound;i++){
-      //   window.clearInterval(i);
-      //  }
       console.log(parseInt(itr.bottom)+"and");
       console.log(pok.top);
       outer.style.visibility = 'visible';
@@ -53,7 +45,7 @@ function isCollide(newLid, newkni) {
   document.getElementById(newLid).appendChild(fknife);
   document.getElementById(newkni).style.display = "none";
   const img = document.createElement('img');
-  img.src = 'logos\\image.png';
+  img.src = 'image.png';
   img.setAttribute('id','knifeimg')
   fknife.appendChild(img);
   }  
@@ -108,7 +100,7 @@ const getKnife = () => {
   newKnife.setAttribute('class', 'knife');
   newKnife.setAttribute('id', `k${date}`);
   const img = document.createElement('img');
-  img.src = 'logos\\image.png';
+  img.src = 'image.png';
   img.setAttribute('id','knifeimg')
   
   document.querySelector('.back').appendChild(newKnife);
